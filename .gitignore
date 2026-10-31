@@ -1,0 +1,30 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# Environment and sensitive settings
+.env
+.streamlit/secrets.toml
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+
+# Agent/scratch temporary leftovers
+.agents/
+.claude/
+scratch/
+patch*.py
+test*.py
+

@@ -1,0 +1,11 @@
+Python: 3.12.13 (main, Mar  4 2026, 09:23:07) [GCC 11.4.0]
+Platform: Linux-6.12.90+-x86_64-with-glibc2.35
+pandas: 2.3.3
+numpy: 2.0.2
+scikit-learn: 1.6.1
+xgboost: 3.2.0
+catboost: 1.2.10
+joblib: 1.5.3
+pyarrow: 24.0.0
+streamlit: unknown
+plotly: 5.24.1

@@ -1,0 +1,71 @@
+{
+    "target": {
+        "name": "target_next_day_price",
+        "meaning": "Next calendar day's Modal_Price within the same State-District-Market-Commodity-Variety-Grade series"
+    },
+    "series_columns": [
+        "State",
+        "District",
+        "Market",
+        "Commodity",
+        "Variety",
+        "Grade"
+    ],
+    "categorical_features": [
+        "State",
+        "District",
+        "Market",
+        "Commodity",
+        "Variety",
+        "Grade"
+    ],
+    "numeric_features": [
+        "Modal_Price",
+        "lag1_price",
+        "price_change_1d",
+        "avg_temp",
+        "min_temp",
+        "max_temp",
+        "wind_speed",
+        "air_pressure",
+        "rainfall",
+        "distance_km",
+        "month",
+        "day_of_week"
+    ],
+    "all_model_features": [
+        "State",
+        "District",
+        "Market",
+        "Commodity",
+        "Variety",
+        "Grade",
+        "Modal_Price",
+        "lag1_price",
+        "price_change_1d",
+        "avg_temp",
+        "min_temp",
+        "max_temp",
+        "wind_speed",
+        "air_pressure",
+        "rainfall",
+        "distance_km",
+        "month",
+        "day_of_week"
+    ],
+    "naive_baseline": {
+        "prediction": "current Modal_Price"
+    },
+    "training": {
+        "train_start": "2024-01-01",
+        "train_end": "2024-09-30",
+        "validation_start": "2024-10-01",
+        "validation_end": "2024-11-30",
+        "test_start": "2024-12-01",
+        "test_end": "2024-12-30",
+        "training_rows": 2393793,
+        "validation_rows": 789589,
+        "test_rows": 348371
+    },
+    "important_prediction_note": "The production dashboard should present this as a next-day prediction model. The training dataset covers 2024 only. Future weather values are not included, so real future forecasts beyond available observed features require user-supplied weather inputs or a future weather API."
+}
